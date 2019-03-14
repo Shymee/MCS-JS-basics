@@ -8,21 +8,21 @@ let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
 let computer = Math.floor(Math.random() * 3);
 
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-if(rock && scissors){
+if(player == rock && computer == scissors){
 	console.log('player win');
-}else if(rock && rock){
+}else if(player == rock && computer == rock){
 	console.log('friendship win');
-}else if(rock && paper){
+}else if(player == rock && computer == paper){
 	console.log('computer win')
-}else if(scissors && rock){
+}else if(player == scissors && computer == rock){
 	console.log('computer win');
-}else if(scissors && scissors){
+}else if(player == scissors && computer == scissors){
 	console.log('friendship win');
-}else if(scissors && paper){
+}else if(player == scissors && computer == paper){
 	console.log('player win');
-}else if(paper && rock){
+}else if(player == paper && computer == rock){
 	console.log('player win');
-}else if(paper && scissors){
+}else if(player == paper && computer == scissors){
 	console.log('computer win');
 }else{
 	console.log('friendship win');
